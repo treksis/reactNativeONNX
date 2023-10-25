@@ -2,9 +2,18 @@
   "expo": {
     "name": "reactNativeONNX",
     "slug": "reactNativeONNX",
+    "plugins": [
+      "onnxruntime-react-native"
+    ],
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "android": {
+      "package": "com.anonymous.reactNativeONNX"
+    },
+    "ios": {
+      "bundleIdentifier": "com.anonymous.reactNativeONNX"
+    }
   }
 }

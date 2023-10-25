@@ -37,6 +37,10 @@ PODS:
     - hermes-engine/Pre-built (= 0.72.6)
   - hermes-engine/Pre-built (0.72.6)
   - libevent (2.1.12)
+  - onnxruntime-c (1.16.1)
+  - onnxruntime-react-native (1.16.1):
+    - onnxruntime-c
+    - React-Core
   - RCT-Folly (2021.07.22.00):
     - boost
     - DoubleConversion
@@ -466,6 +470,7 @@ DEPENDENCIES:
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - hermes-engine (from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`)
   - libevent (~> 2.1.12)
+  - onnxruntime-react-native (from `../node_modules/onnxruntime-react-native`)
   - RCT-Folly (from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`)
   - RCTRequired (from `../node_modules/react-native/Libraries/RCTRequired`)
   - RCTTypeSafety (from `../node_modules/react-native/Libraries/TypeSafety`)
@@ -505,6 +510,7 @@ SPEC REPOS:
   trunk:
     - fmt
     - libevent
+    - onnxruntime-c
     - SocketRocket
 
 EXTERNAL SOURCES:
@@ -537,6 +543,8 @@ EXTERNAL SOURCES:
   hermes-engine:
     :podspec: "../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec"
     :tag: hermes-2023-08-07-RNv0.72.4-813b2def12bc9df02654b3e3653ae4a68d0572e0
+  onnxruntime-react-native:
+    :path: "../node_modules/onnxruntime-react-native"
   RCT-Folly:
     :podspec: "../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec"
   RCTRequired:
@@ -621,6 +629,8 @@ SPEC CHECKSUMS:
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
   hermes-engine: 8057e75cfc1437b178ac86c8654b24e7fead7f60
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
+  onnxruntime-c: df4902d5167558405d4b2b9dc7c62c179017768d
+  onnxruntime-react-native: 753834faafb338b4b5de4e41d1d595e098fe984d
   RCT-Folly: 424b8c9a7a0b9ab2886ffe9c3b041ef628fd4fb1
   RCTRequired: 28469809442eb4eb5528462705f7d852948c8a74
   RCTTypeSafety: e9c6c409fca2cc584e5b086862d562540cb38d29
@@ -656,6 +666,6 @@ SPEC CHECKSUMS:
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: b76f1acfda8212aa16b7e26bcce3983230c82603
 
-PODFILE CHECKSUM: 0d4237fefc96970c492b455c620851ecc158737f
+PODFILE CHECKSUM: 5faa5f74f58cac24f1c342ea5aad0ee1591fddd1
 
 COCOAPODS: 1.13.0

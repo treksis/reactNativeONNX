@@ -1,4 +1,4 @@
-package com.reactnativeonnx;
+package com.anonymous.reactNativeONNX;
 
 import android.os.Build;
 import android.os.Bundle;

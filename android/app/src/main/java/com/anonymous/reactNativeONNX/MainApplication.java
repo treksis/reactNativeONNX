@@ -1,4 +1,4 @@
-package com.reactnativeonnx;
+package com.anonymous.reactNativeONNX;
 
 import android.app.Application;
 import android.content.res.Configuration;
